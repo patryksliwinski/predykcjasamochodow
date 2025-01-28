@@ -90,7 +90,7 @@ def training_base(X_train, X_test, y_train, y_test, suffix):
         )
 
         results_df = results_df.sort_values(by="mean_test_score", ascending=False)
-        results_df.to_csv(f"stats/{name}_stats.csv", index=False)
+        results_df.to_csv(f"stats/{name}_stats_{suffix}.csv", index=False)
         print(f"Najlepszy wynik CV (RMSE) dla {name}: {grid_search.best_score_:.4f}")
         print(f"Najlepsze parametry dla {name}: {grid_search.best_params_}")
         print(f"Czas trenowania {name}: {training_time:.2f} s")
