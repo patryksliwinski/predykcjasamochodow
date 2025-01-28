@@ -1,0 +1,20 @@
+Training RandomForest...
+Najlepszy wynik CV (RMSE) dla RandomForest: -2005.1362
+Najlepsze parametry dla RandomForest: {'max_depth': 20}
+Czas trenowania RandomForest: 52.53 s
+Training GradientBoosting...
+Najlepszy wynik CV (RMSE) dla GradientBoosting: -1935.3495
+Najlepsze parametry dla GradientBoosting: {'learning_rate': 0.1, 'max_depth': 10}
+Czas trenowania GradientBoosting: 237.48 s
+Training MLPRegressor...
+Najlepszy wynik CV (RMSE) dla MLPRegressor: -1978.6274
+Najlepsze parametry dla MLPRegressor: {'alpha': 0.01, 'hidden_layer_sizes': (50, 50, 50)}
+Czas trenowania MLPRegressor: 1228.23 s
+Training LinearRegression...
+Najlepszy wynik CV (RMSE) dla LinearRegression: -3304.6661
+Najlepsze parametry dla LinearRegression: {}
+Czas trenowania LinearRegression: 0.49 s
+RandomForest => Test RMSE: 1784.12
+GradientBoosting => Test RMSE: 1737.87
+MLPRegressor => Test RMSE: 1892.48
+LinearRegression => Test RMSE: 3305.84
